@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎮 Mario Jump
 
 Um jogo de plataforma inspirado no clássico Mario, desenvolvido com HTML, CSS e JavaScript. O objetivo é pular os obstáculos e evitar colisões para continuar jogando.
@@ -39,3 +40,6 @@ mario-jump/
 3. Abra o arquivo `index.html` no navegador ou utilize a extensão Live Server.
 4. Pressione **Espaço** ou **Seta para cima** para pular.
 
+=======
+# mario-jump
+>>>>>>> 3de01d9b9ae5e75c43980b2c5743bd1f9085b5a5

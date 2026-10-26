@@ -1,20 +1,38 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jogue Mario Jump, um jogo desenvolvido com HTML, CSS e JavaScript. Pule os obstáculos e divirta-se!"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Mario Jump</title>
+    <title>Mario Jump | Jogo</title>
   </head>
 
   <body>
-    <div class="game-board">
-      <img src="./img/clouds.png" class="clouds"/>
-      <img src="./img/mario.gif" class="mario jump"/>
-      <img src="./img/pipe.png" class="pipe"/>
-    </div>
+    <main class="game-board">
+      <!-- Cenário -->
+      <img src="./img/clouds.png" class="clouds" alt="Nuvens no céu" />
+
+      <!-- Personagem -->
+      <img src="./img/mario.gif" class="mario" alt="Personagem Mario" />
+
+      <!-- Obstáculo -->
+      <img src="./img/pipe.png" class="pipe" alt="Cano verde" />
+
+      <!-- Tela de fim de jogo -->
+      <div class="game-over" hidden>
+        <h1>Fim de jogo!</h1>
+        <p>Você colidiu com o obstáculo.</p>
+
+        <button type="button" class="restart-button">Jogar novamente</button>
+      </div>
+
+      <!-- Instruções -->
+      <p class="instructions">Pressione ESPAÇO ou ↑ para pular.</p>
+    </main>
   </body>
-
   <script src="./js/script.js" defer></script>
-
 </html>
