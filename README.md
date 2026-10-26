@@ -1,5 +1,6 @@
-<<<<<<< HEAD
 # 🎮 Mario Jump
+
+<img width="1920" height="879" alt="image" src="https://github.com/user-attachments/assets/6d1c8497-038b-4722-befe-bd72a7bb5c0d" />
 
 Um jogo de plataforma inspirado no clássico Mario, desenvolvido com HTML, CSS e JavaScript. O objetivo é pular os obstáculos e evitar colisões para continuar jogando.
 
@@ -21,7 +22,6 @@ Um jogo de plataforma inspirado no clássico Mario, desenvolvido com HTML, CSS e
 
 ## 📂 Estrutura do projeto
 
-```text
 mario-jump/
 ├── index.html
 ├── css/
@@ -41,5 +41,7 @@ mario-jump/
 4. Pressione **Espaço** ou **Seta para cima** para pular.
 
 =======
-# mario-jump
->>>>>>> 3de01d9b9ae5e75c43980b2c5743bd1f9085b5a5
+
+
+<a href="https://raquelgoncalo.github.io/mario-jump/">Live Preview</a>
+========
