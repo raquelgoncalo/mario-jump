@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background: #f4fbff;
+    font-family: Arial, sans-serif;
+}
+
+.game-board {
+    position: relative;
+    width: min(100%, 900px);
+    height: 500px;
+    overflow: hidden;
+    border-bottom: 15px solid #23a023;
+    background: linear-gradient(#87ceeb, #e0f6ff);
+}
+
+.mario {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    width: 150px;
+    z-index: 2;
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    right: -80px;
+    width: 80px;
+    animation: pipe-animation 1.5s infinite linear;
+}
+
+.clouds {
+    position: absolute;
+    top: 30px;
+    right: -550px;
+    width: 550px;
+    animation: clouds-animation 20s infinite linear;
+}
+
+.mario.jump {
+    animation: jump 500ms ease-out;
+}
+
+.instructions {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 3;
+    font-size: 14px;
+}
+
+.game-over {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background: rgb(0 0 0 / 65%);
+    color: white;
+    font-size: 32px;
+}
+
+.game-over[hidden] {
+    display: none;
+}
+
+.restart-button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0%, 100% {
+        bottom: 0;
+    }
+
+    40%, 50% {
+        bottom: 180px;
+    }
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -550px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .game-board {
+        height: 65vh;
+        min-height: 320px;
+        max-height: 500px;
+    }
+
+    .mario {
+        left: 18px;
+        width: 110px;
+    }
+
+    .pipe {
+        width: 60px;
+    }
+
+    .clouds {
+        width: 300px;
+    }
+
+    .instructions {
+        font-size: 12px;
+    }
+}
+
+
