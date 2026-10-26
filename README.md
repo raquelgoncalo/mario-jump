@@ -22,6 +22,7 @@ Um jogo de plataforma inspirado no clássico Mario, desenvolvido com HTML, CSS e
 
 ## 📂 Estrutura do projeto
 
+```text
 mario-jump/
 ├── index.html
 ├── css/
@@ -32,6 +33,7 @@ mario-jump/
     ├── mario.gif
     ├── pipe.png
     └── clouds.png
+```
 
 ## ▶️ Como executar
 
